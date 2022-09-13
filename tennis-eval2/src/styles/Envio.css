@@ -1,0 +1,8 @@
+.anuncio-envio{
+  background-color: var(--verde-claro);
+  color: var(--verde-oscuro);
+  font-weight: var(--media);
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 1.7rem;
+}

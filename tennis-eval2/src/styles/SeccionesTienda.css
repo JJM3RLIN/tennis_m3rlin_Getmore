@@ -1,0 +1,50 @@
+.secciones-tienda{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+@media (min-width: 700px){
+    .secciones-tienda{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+.secciones-tienda p{
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.tienda-raquetas{
+    background-image: url('../images/t1.png');
+}
+.tienda-pelotas{
+    background-image: url('../images/t2.png');
+}
+.tienda-accesorios{
+    background-image: url('../images/t3.png');
+}
+.tienda-raquetas, .tienda-pelotas, .tienda-accesorios{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5rem;
+    padding-bottom: 2.5rem;
+    height: 60rem;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   transition: all .3s ease-in-out;
+}
+@media (min-width: 700px){
+    .tienda-raquetas, .tienda-pelotas, .tienda-accesorios{
+       padding: 3.5rem;
+    }
+}
+.tienda-raquetas:hover, .tienda-pelotas:hover, .tienda-accesorios:hover{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    filter: brightness(90%);
+}

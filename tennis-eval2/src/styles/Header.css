@@ -1,0 +1,33 @@
+header{
+    background-image: url('../images/ImagenHeader.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem;
+    height: auto;
+}
+@media (min-width: 700px){
+ header{
+    height: 57rem;
+ }
+}
+.contenido{
+    text-align: center;
+    margin-top: 10rem;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenido p{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    width: auto;
+}
+@media (min-width: 700px){
+    .contenido p{
+        font-size: 2rem;
+        width: 38rem;
+    }
+}

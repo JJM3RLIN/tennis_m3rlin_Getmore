@@ -1,0 +1,23 @@
+.grafico{
+    background-image: url('../images/img-grafico.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+    height: 50rem;
+}
+.grafico h2{
+    color: var(--blanco);
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 3.5rem;
+}
+@media (min-width: 700px){
+    .grafico h2{
+        font-size: 6rem;
+    }
+}

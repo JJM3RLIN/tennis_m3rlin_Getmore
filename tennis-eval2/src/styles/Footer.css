@@ -1,0 +1,32 @@
+footer{
+    background-color: var(--verde-claro);
+    padding: 6rem 1rem;
+    text-align: center;
+    position: relative;
+}
+.socialMedia-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+.icono-pelota{
+    position: absolute;
+    bottom: .5rem;
+    right: 2.5rem;
+    width: 6.5rem;
+}
+@media (min-width: 700px){
+    .icono-pelota{
+       width: 10rem;
+        top: 6.7rem;
+        right: 2.5rem;
+    }
+}
+footer p, footer a{
+    color: var(--verde-oscuro);
+}
+footer a{
+    text-decoration: underline;
+}

@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Apercu';
+  src: url('./assets/Apercu.ttf');
+}
+:root { 
+  /*Tipografia*/
+  --fuente: 'Apercu';
+  /*Colores*/
+  --blanco: rgb(255, 255, 255);
+  --verde-claro: rgb(207, 224, 98);
+  --verde-oscuro: rgb(111, 126, 13);
+  --cafe-naranja: rgb(217, 99, 33);
+  --cafe-naranja-hover: rgb(170, 78, 25);
+  --negro: rgb(0, 0, 0);
+}
+
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Apercu';
+  background-color: var(--balnco);
+  margin: 0;
+}
+/*Tomar 1rem = 10px y evitar que se encimen los elementos*/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+h1, h2, h3{
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+h1{
+  font-size: 5rem;
+}
+@media (min-width: 700px){
+ h1{
+  font-size: 6rem;
+ }
+}
+a{
+  text-decoration: none;
+  color: var(--blanco);
+  transition: all .3s ease-in-out;
+}
+img{
+  max-width: 100%;
+}
+.enlace{
+  display: inline-block;
+  text-align: center;
+  background-color: var(--cafe-naranja);
+  text-transform: uppercase;
+  border-radius: 5rem;
+  padding: 1.3rem 5rem;
+  color: var(--blanco);
+  font-size: 1.2rem;
+  transition: all .3s ease-in-out;
+}
+.enlace:hover{
+  cursor: pointer;
+  background-color: var(--cafe-naranja-hover);
+}
+@media (min-width: 700px){
+ .enlace{
+  padding: 1.3rem 7.5rem;
+ }
+}
